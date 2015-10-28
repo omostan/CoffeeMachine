@@ -35,9 +35,6 @@
     </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="PresentationCore" />
-    <Reference Include="StanControls">
-      <HintPath>..\Dependencies\StanControls.dll</HintPath>
-    </Reference>
     <Reference Include="Stateless, Version=2.5.11.0, Culture=neutral, PublicKeyToken=93038f0927583c9a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Dependencies\Stateless.dll</HintPath>
