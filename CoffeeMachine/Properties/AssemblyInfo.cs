@@ -4,9 +4,9 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 
-[assembly: AssemblyCompany("Omotech Computer Services")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCopyright("Copyright © Stanley Omoregie 2015. All Rights Reserved.")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyDescription("Stateless Machine used to serve Coffee")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyProduct("CoffeeMachine")]
