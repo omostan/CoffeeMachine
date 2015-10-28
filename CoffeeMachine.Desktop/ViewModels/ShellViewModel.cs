@@ -188,7 +188,7 @@ namespace ViewModels
 				}
 				case CoffeeMachineState.CoffeeReady:
 				{
-					this.UserMessage = "You coffee is ready!";
+					this.UserMessage = "Your coffee is ready!";
 					break;
 				}
 				case CoffeeMachineState.RefundMoney:
