@@ -1,6 +1,5 @@
 namespace CoffeeMachine.Model.StateMachine
 {
-    using System;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
     using System.Threading;
@@ -58,12 +57,12 @@ namespace CoffeeMachine.Model.StateMachine
         private void ConfigureMachine()
         {
             this.Configure(CoffeeMachineState.Idle).Permit(CoffeeMachineTrigger.InsertMoney, CoffeeMachineState.WithMoney);
-            this.Configure(CoffeeMachineState.RefundMoney).OnEntry(new Action(this.RefundMoney)).Permit(CoffeeMachineTrigger.MoneyRefunded, CoffeeMachineState.Idle);
+            this.Configure(CoffeeMachineState.RefundMoney).OnEntry(this.RefundMoney).Permit(CoffeeMachineTrigger.MoneyRefunded, CoffeeMachineState.Idle);
             this.Configure(CoffeeMachineState.WithMoney).PermitReentry(CoffeeMachineTrigger.InsertMoney).Permit(CoffeeMachineTrigger.RefundMoney, CoffeeMachineState.RefundMoney).Permit(CoffeeMachineTrigger.EnoughMoney, CoffeeMachineState.CanSelectCoffee);
             this.Configure(CoffeeMachineState.CanSelectCoffee).PermitReentry(CoffeeMachineTrigger.InsertMoney).Permit(CoffeeMachineTrigger.RefundMoney, CoffeeMachineState.RefundMoney).Permit(CoffeeMachineTrigger.PrepareCoffee, CoffeeMachineState.PreparingCoffee);
-            this.Configure(CoffeeMachineState.PreparingCoffee).OnEntry(new Action(this.PrepareCoffee)).Permit(CoffeeMachineTrigger.CoffeePrepared, CoffeeMachineState.CoffeeReady);
+            this.Configure(CoffeeMachineState.PreparingCoffee).OnEntry(this.PrepareCoffee).Permit(CoffeeMachineTrigger.CoffeePrepared, CoffeeMachineState.CoffeeReady);
             this.Configure(CoffeeMachineState.CoffeeReady).Permit(CoffeeMachineTrigger.TakeCoffe, CoffeeMachineState.RefundMoney);
-            this.OnTransitioned(new Action<Transition>(this.NotifyStateChanged));
+            this.OnTransitioned(this.NotifyStateChanged);
         }
 
         public void InsertCoin(double amount)
