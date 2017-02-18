@@ -34,12 +34,8 @@ namespace Base.Comands
 		public static DelegateCommand<TCommandParam> CreateCommand<TState, TTrigger, TCommandParam>(this StateMachine<TState, TTrigger> stateMachine, TTrigger trigger, Action<TCommandParam> execute = null, Func<bool> canExecute = null)
 		{
 			var action = execute;
-			var func = canExecute;
-			if (func == null)
-			{
-				func = () => true;
-			}
-			if (action == null)
+			var func = canExecute ?? (() => true);
+		    if (action == null)
 			{
 				action = param0 => {
 				};

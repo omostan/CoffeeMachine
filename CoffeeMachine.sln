@@ -1,10 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Dektop", "CoffeeMachine.Desktop\CoffeeMachine.Dektop.csproj", "{BDABAD4B-74B6-4060-B095-3389737B32B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Model", "CoffeeMachine.Model\CoffeeMachine.Model.csproj", "{2F24DD67-F2FE-449D-9A66-8B979DA59B94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ECB8A599-BCB2-4CB9-9208-EB7F2DC0705A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BDABAD4B-74B6-4060-B095-3389737B32B7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BDABAD4B-74B6-4060-B095-3389737B32B7}.Debug|Any CPU.Build.0 = Debug|x86
 		{BDABAD4B-74B6-4060-B095-3389737B32B7}.Debug|x86.ActiveCfg = Debug|x86
 		{BDABAD4B-74B6-4060-B095-3389737B32B7}.Debug|x86.Build.0 = Debug|x86
 		{BDABAD4B-74B6-4060-B095-3389737B32B7}.Release|Any CPU.ActiveCfg = Release|x86
