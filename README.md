@@ -1,6 +1,10 @@
 # CoffeeMachine
 
-This repo is an extension of the work of Juan Carlos (http://softwarejuancarlos.com/2014/11/09/wpf-state-machine-commands/).
+<center>
+    <img src=".\images\CoffeeMachine.png" />
+</center>
+
+This repo is an extension of <a href="http://softwarejuancarlos.com/2014/11/09/wpf-state-machine-commands/" target="_blank">Juan Carlos's</a> work.
 
 Initially, I couldn't find a good example of stateless machine design until I stumbled into Juan's website. As this was the perfect example I needed, I decided to post it here for future reference. It is important to note though, that Juan placed a link on his site for the compiled source code but not the raw project. I had to do some re-coding and re-structuring to get it working as intended by Juan.
 
