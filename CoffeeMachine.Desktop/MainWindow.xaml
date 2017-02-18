@@ -12,6 +12,6 @@
                WindowStartupLocation="CenterScreen"
                >
     <Grid>
-        <views:ShellView HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <views:ShellView HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="-41,0,41,0"/>
     </Grid>
 </Window>
